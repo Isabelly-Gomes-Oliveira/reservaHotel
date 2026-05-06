@@ -13,7 +13,7 @@ public interface ReservaRepository extends JpaRepository<Reserva, Integer> {
     // Lista nome e email dos hóspedes com reserva ATIVA
     @Query("SELECT h.nomeCompleto, h.email FROM Reserva r " +
            "JOIN r.hospede h " +
-           "WHERE r.status = 'ATIVA'")
+           "WHERE r.status = 'ativa'")
     List<Object[]> findHospedesComReservaAtiva();
 
     // Lista todas as reservas por status
