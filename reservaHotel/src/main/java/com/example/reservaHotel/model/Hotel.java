@@ -25,5 +25,6 @@ public class Hotel {
     private String site;
 
     // FK's:
-    // - possui Quarto
+    @OneToMany(mappedBy = "hotel") // 1 hotel para N quartos
+    private List<Quarto> quartos;
 }

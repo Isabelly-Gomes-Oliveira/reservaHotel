@@ -28,6 +28,11 @@ public class Reserva {
     private String status;
 
     // FK's:
-    // - pertence a Hospede
-    // - pertence a Quarto
+    @ManyToOne // N reservas para 1 Quarto
+    @JoinColumn(name = "quarto_id") 
+    private Quarto quarto;
+
+    @ManyToOne // N reservas para 1 Hóspede
+    @JoinColumn(name = "hospede_id")
+    private Hospede hospede;
 }

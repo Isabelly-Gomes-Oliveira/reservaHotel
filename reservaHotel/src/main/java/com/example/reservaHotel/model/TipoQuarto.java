@@ -16,5 +16,6 @@ public class TipoQuarto {
     private String descricao;
 
     // FK's:
-    // - pertence a Quarto
+    @OneToMany(mappedBy = "tipoQuarto") // 1 tipo para N quartos
+    private List<Quarto> quartos;
 }

@@ -25,8 +25,12 @@ public class Quarto {
     private Double valorDiaria;
 
     // FK's:
-    // - tem TipoQuarto
-    // - pertence a Hotel
-    // - tem Reserva
+    @ManyToOne // N quartos para 1 TipoQuarto
+    @JoinColumn(name = "tipoquarto_id") 
+    private TipoQuarto tipoQuarto;
+
+    @ManyToOne // N quartos para 1 Hotel
+    @JoinColumn(name = "hotel_id")
+    private Hotel hotel;
 
 }

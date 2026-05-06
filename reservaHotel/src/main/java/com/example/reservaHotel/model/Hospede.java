@@ -28,5 +28,6 @@ public class Hospede {
     private String celular;
 
     // FK's:
-    // - possui Reserva
+    @OneToMany(mappedBy = "hospede") // 1 hóspede para N reservas
+    private List<Reserva> reservas;
 }
