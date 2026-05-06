@@ -1,5 +1,6 @@
 package com.example.reservaHotel;
 
+import java.util.List;
 import jakarta.persistence.*;
 import lombok.*;
 

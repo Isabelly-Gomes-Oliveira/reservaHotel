@@ -1,5 +1,6 @@
 package com.example.reservaHotel;
 
+import java.util.Date;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,7 +19,7 @@ public class Reserva {
     @Column(name="datacheckout")
     private Date datacheckout;
 
-    @Column(name="qtdeDias", )
+    @Column(name="qtdeDias")
     private Integer qtdeDias;
 
     @Column(name="valorTotal")

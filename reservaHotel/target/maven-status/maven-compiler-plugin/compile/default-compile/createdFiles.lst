@@ -1,0 +1,11 @@
+com/example/reservaHotel/repository/HospedeRepository.class
+com/example/reservaHotel/Reserva.class
+com/example/reservaHotel/repository/ReservaRepository.class
+com/example/reservaHotel/repository/TipoQuartoRepository.class
+com/example/reservaHotel/repository/QuartoRepository.class
+com/example/reservaHotel/Hotel.class
+com/example/reservaHotel/ReservaHotelApplication.class
+com/example/reservaHotel/TipoQuarto.class
+com/example/reservaHotel/Hospede.class
+com/example/reservaHotel/repository/HotelRepository.class
+com/example/reservaHotel/Quarto.class

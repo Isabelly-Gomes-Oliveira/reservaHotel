@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: reservaHotel
+  datasource:
+    url: jdbc:sqlserver://regulus.cotuca.unicamp.br:1433;databaseName=BD24132;encrypt=true;trustServerCertificate=true
+    username: "BD24132"
+    password: "BD24132"
+    drive-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true

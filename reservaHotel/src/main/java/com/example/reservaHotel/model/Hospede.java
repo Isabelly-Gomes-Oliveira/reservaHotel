@@ -2,6 +2,8 @@ package com.example.reservaHotel;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name="hospede")
@@ -12,19 +14,19 @@ public class Hospede {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="cpf", leght= 11)
+    @Column(name="cpf", length= 11)
     private String cpf;
 
-    @Column(name="nomeCompleto", lenght= 80)
+    @Column(name="nomeCompleto", length= 80)
     private String nomeCompleto;
 
     @Column(name="dataNascimento")
     private Date dataNascimento;
 
-    @Column(name="email", lenght= 80)
+    @Column(name="email", length= 80)
     private String email;
 
-    @Column(name="celular", lenght= 14)
+    @Column(name="celular", length= 14)
     private String celular;
 
     // FK's:

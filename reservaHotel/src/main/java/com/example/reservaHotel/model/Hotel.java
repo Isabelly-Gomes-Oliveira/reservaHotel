@@ -2,6 +2,7 @@ package com.example.reservaHotel;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.List;
 
 @Entity
 @Table(name="hotel")
@@ -12,16 +13,16 @@ public class Hotel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="nome", lenght= 40)
+    @Column(name="nome", length= 40)
     private String nome;
 
-    @Column(name="endereco", leght= 100)
+    @Column(name="endereco", length= 100)
     private String endereco;
 
-    @Column(name="telefone", leght= 14)
+    @Column(name="telefone", length= 14)
     private String telefone;
 
-    @Column(name="site", leght= 50)
+    @Column(name="site", length= 50)
     private String site;
 
     // FK's:
